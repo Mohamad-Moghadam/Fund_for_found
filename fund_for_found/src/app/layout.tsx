@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,33 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+          <nav className="w-full bg-white shadow-sm px-10 py-4">
+          <section className="flex gap-10 mt-[25.4px] justify-around">
+            <Image src="/Vector.png" alt="logo" width={27.839996337890625} height={48} />
+            <div className="flex items-center gap-10">
+              <ul className="flex items-center gap-10">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Brand and organization</a>
+                </li>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <a href="#">Help & Support</a>
+                </li>
+              </ul>
+              <div className="flex items-center ">
+                <input type="text" placeholder="Search brand, category, tag or ..." className="shadow-2xl rounded-2xl px-3 py-1"/>
+                <section className="bg-[#D7CFF9] w-[39px] h-[39px] rounded-full ml-10">
+                    
+                </section>
+              </div>
+            </div>
+          </section>
+          </nav>
         {children}
       </body>
     </html>

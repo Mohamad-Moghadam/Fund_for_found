@@ -18,7 +18,7 @@ export default function Home() {
         <p className="mt-[17px] w-[253px] justify-center align-middle text-center text-sm leading-relaxed">
           if your brand is stablished and you are looking for continuous support, get started now.
         </p>
-        <Link href="/LogIn">
+        <Link href="/BrandInfo">
           <button className="bg-[#5C4FC1] w-[259px] h-[39px] rounded-[5px] mt-[69px]">
             Start
           </button>
